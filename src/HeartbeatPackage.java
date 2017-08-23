@@ -1,4 +1,10 @@
+/**
+ * 心跳包
+ */
 public class HeartbeatPackage {
+
+    int RedOrBlue;
+
     float rx;
     float ry;
     float rz;
@@ -11,8 +17,10 @@ public class HeartbeatPackage {
     float bRotx;
     float bRoty;
     float bRotz;
-    int RedOrBlue;
 
+    /**
+     * 构造方法
+     */
     public HeartbeatPackage(int RedOrBlue, float rx, float ry, float rz, float rRotx, float rRoty, float rRotz,
                             float bx, float by, float bz, float bRotx, float bRoty, float bRotz) {
         this.RedOrBlue = RedOrBlue;
@@ -31,21 +39,24 @@ public class HeartbeatPackage {
     }
 
     public void Heartbeatdata() {
+
         if (RedOrBlue == 0) {
-            ServerAgentThread.rx = rx;
-            ServerAgentThread.ry = ry;
-            ServerAgentThread.rz = rz;
-            ServerAgentThread.rRotx = rRotx;
-            ServerAgentThread.rRoty = rRoty;
-            ServerAgentThread.rRotz = rRotz;
+
+            AgentThread.rx = rx;
+            AgentThread.ry = ry;
+            AgentThread.rz = rz;
+            AgentThread.rRotx = rRotx;
+            AgentThread.rRoty = rRoty;
+            AgentThread.rRotz = rRotz;
 
         } else if (RedOrBlue == 1) {
-            ServerAgentThread.bx = bx;
-            ServerAgentThread.by = by;
-            ServerAgentThread.bz = bz;
-            ServerAgentThread.bRotx = bRotx;
-            ServerAgentThread.bRoty = bRoty;
-            ServerAgentThread.bRotz = bRotz;
+
+            AgentThread.bx = bx;
+            AgentThread.by = by;
+            AgentThread.bz = bz;
+            AgentThread.bRotx = bRotx;
+            AgentThread.bRoty = bRoty;
+            AgentThread.bRotz = bRotz;
 
         }
 
