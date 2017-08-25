@@ -1,3 +1,5 @@
+package com.caizicong.network;
+
 /**
  * 动作指令对象
  */

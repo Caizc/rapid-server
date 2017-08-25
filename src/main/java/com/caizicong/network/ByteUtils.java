@@ -1,3 +1,5 @@
+package com.caizicong.network;
+
 /**
  * 字节工具类
  */

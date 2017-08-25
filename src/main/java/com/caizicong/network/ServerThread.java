@@ -1,3 +1,5 @@
+package com.caizicong.network;
+
 import java.net.*;
 
 /**
@@ -17,7 +19,7 @@ public class ServerThread extends Thread {
      * 服务端程序入口
      * @param args
      */
-    public static void main(String args[]) {
+    public static void startup() {
 
         // 启动服务端连接监听线程
         new ServerThread().start();

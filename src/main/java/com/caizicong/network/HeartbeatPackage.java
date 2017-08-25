@@ -1,3 +1,5 @@
+package com.caizicong.network;
+
 /**
  * 心跳包
  */

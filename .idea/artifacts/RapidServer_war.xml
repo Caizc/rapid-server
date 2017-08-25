@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="RapidServer:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="rapidserver.war">
+      <element id="artifact" artifact-name="RapidServer:war exploded" />
+    </root>
+  </artifact>
+</component>

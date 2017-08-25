@@ -1,3 +1,5 @@
+package com.caizicong.network;
+
 import java.util.*;
 import java.io.*;
 import java.net.*;
@@ -295,6 +297,18 @@ public class AgentThread extends Thread {
                 actionQueue.offer(action);
             }
 
+        } else {
+
+            byte[] sidBytes = {bytes[0]};
+            byte[] pidBytes = {bytes[1]};
+            byte[] sqidBytes = {bytes[2]};
+
+            int serviceId = ByteUtils.byteArray2Int(sidBytes);
+            int protocolId = ByteUtils.byteArray2Int(pidBytes);
+            int sequenceId = ByteUtils.byteArray2Int(sqidBytes);
+
+            System.out.println(serviceId + " : " + protocolId + " : " + sequenceId);
         }
+
     }
 }
