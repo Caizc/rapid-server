@@ -51,7 +51,9 @@ public class ServerThread extends Thread {
                 Socket connection = serverSocket.accept();
 
                 // 将新的 Socket 连接移交给 AgentThread 处理
-                new AgentThread(connection).start();
+//                new AgentThread(connection).start();
+
+                new ProtobufThread(connection).start();
 
             } catch (Exception e) {
                 e.printStackTrace();
